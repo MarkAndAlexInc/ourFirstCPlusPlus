@@ -38,19 +38,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: hello\ woireld
+all: ourFirstCPlusPlus
 
 # Tool invocations
-hello\ woireld: $(OBJS) $(USER_OBJS)
+ourFirstCPlusPlus: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++  -o "hello woireld" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "ourFirstCPlusPlus" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) "hello woireld"
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) ourFirstCPlusPlus
 	-@echo ' '
 
 .PHONY: all clean dependents

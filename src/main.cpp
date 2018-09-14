@@ -1,28 +1,24 @@
 //============================================================================
-// Name        : hello.cpp
-// Author      : Al
+// Name        : main.cpp
+// Author      : Alex J & Mark W
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Todo-app in CPP
 //============================================================================
 
 #include <iostream>
 #include <cstring>
 using namespace std;
 
-
-
-
-
-string sayMyName() {
-	string myName = "Mark";
-	return myName;
+string sayMyName(string name) {
+	cout << "Hello " << name << endl;
+	return name;
 }
 
-
 int main() {
-	string myName = sayMyName();
-
-	cout << "The number is " << myName << endl; // prints !!!Hello World!!!
+	string name;
+	cout << "Enter your name: ";
+	cin >> name;
+	sayMyName(name);
 	return 0;
 }
